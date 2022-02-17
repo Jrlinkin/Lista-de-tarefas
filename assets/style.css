@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color1: rgb(233, 233, 233);
+    --color2: rgb(255, 255, 255);
+    --color3: rgb(67, 90, 139);
+    --fredoka: 'Fredoka One', cursive;
+}
+body{
+    background-color: var(--color1);
+    font-family: var(--fredoka);
+}
+
+.container{
+    margin: 0 auto;
+    background-color: var(--color2);
+    width: 50%;
+    margin-top: 5%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+
+}
+h1{
+    color: var(--color3);
+    margin-top: 30px;
+}
+h1,div,ul{
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+input{
+    border: none;
+    background-color: var(--color1);
+    border-radius: 3px;
+}
+hr{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: var(--color1);
+    border: none;
+    height: 2px;
+}
+
+div{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+}
+ul{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+li{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    
+    
+}
+li::before{
+    content: '';
+    position: absolute;
+    background-color: var(--color3);
+    width: 8px;
+    height: 8px;
+    left: -3%;
+    bottom: 50%;
+    border-radius: 100px;
+}
+
+
+.botao{
+    border: none;
+    width: 150px;
+    background-color: var(--color3);
+    color: var(--color2);
+    cursor: pointer;
+    height: 30px;
+    border-radius: 3px;
+}
+
+@media (max-width: 555px)
+{
+  .container{
+      height: 100%;
+      width: 100%;
+      margin: 0;
+  }
+}
