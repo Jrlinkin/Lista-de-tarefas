@@ -1,5 +1,5 @@
 Crie sua lista! 😸
-lista-de-tarefas-swart.vercel.app/
+https://lista-de-tarefas-swart.vercel.app/
 
 Apenas um objeto de estudo. 🤓
 
